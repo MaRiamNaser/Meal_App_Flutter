@@ -13,9 +13,24 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
  
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.pink,
+        accentColor: Colors.amber,
+        canvasColor: Color.fromRGBO(255, 254,229, 1),
+        textTheme: ThemeData.light().textTheme.copyWith(
+          body1: TextStyle(
+            color: Color.fromRGBO(20, 50, 50, 1),
+          ),
+           body2: TextStyle(
+            color: Color.fromRGBO(20, 50, 50, 1),
+          ),
+          title: TextStyle(
+            fontSize:20,
+            fontFamily: 'RobotoCondensed', 
+            )
+        ) 
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+     // home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: CategoriesScreen(),
     );
   }
 }
@@ -41,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
      
         title: Text(widget.title),
       ),
-      body: CategoriesScreen(),
+      body: null,
 
     );
   }
