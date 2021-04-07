@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:meal_app/screens/categories_screen.dart';
 import 'package:meal_app/screens/favorites_screen.dart';
+import 'package:meal_app/widgets/main-drawer.dart';
 
 class TabsScreen extends StatefulWidget {
 
@@ -53,8 +54,9 @@ class _TabsScreenState extends State<TabsScreen> {
               title: Text("Favorites"))
    
            ],
-         )
+         ),
          
+         drawer: MainDrawer(),
        );
      }
 }
